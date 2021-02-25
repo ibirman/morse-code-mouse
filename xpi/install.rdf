@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+
+		<em:id>{9AA46F4F-4DC7-4c06-97AF-5035170633FE}</em:id>
+		<em:name>Morse Code Interpreter</em:name>
+		<em:version>0.1</em:version>
+		<em:description>Provides the ability to enter data via Morse Code mouse clicks.</em:description>
+		<em:creator>Igor Birman</em:creator>
+		<em:homepageURL>http://www.cybgerigor.com/morsecode</em:homepageURL>
+		<em:iconURL>chrome://helloworld/skin/helloworld.png</em:iconURL>
+		<em:aboutURL>chrome://helloworld/content/about.xul</em:aboutURL>
+		<em:updateURL>http://extensions.roachfiend.com/update.rdf</em:updateURL>
+		<em:file>
+			<Description about="urn:mozilla:extension:file:morsecode.jar">
+				<em:package>content/morsecode/</em:package>
+				<em:skin>skin/classic/morsecode/</em:skin>
+			</Description>
+		</em:file>
+
+		<em:targetApplication>
+			<Description>
+				<em:id>{a3a34ec3-1862-42b6-9cce-08098b429b99}</em:id>
+				<em:minVersion>0.7</em:minVersion>
+				<em:maxVersion>1.5</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+
+</RDF>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<overlay id="morsecodeOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+// This imports our javascript.
+
+<script type="application/x-javascript" src="chrome://morsecode/content/morsecodeOverlay.js">
+
+</script>
+
+
+// This is for the right click menu.
+
+<popup id="contentAreaContextMenu">
+  <menuitem id="morsecode" label="Morse Code Interpreter" accesskey="H" 
+  insertafter="context-stop" oncommand="morsecode();"/>
+</popup>
+
+
+// This is for the Tools menu.
+
+<menupopup id="menu_ToolsPopup">
+	<menuitem insertafter="devToolsSeparator" label="Morse Code Interpreter"
+	accesskey="H" oncommand="morsecode();" />	
+</menupopup>
+
+</overlay>
+
